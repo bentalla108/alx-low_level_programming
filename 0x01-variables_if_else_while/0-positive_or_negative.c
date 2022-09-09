@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* 
+/*
 	main fonction is used to run the script
 	and return 0 for sucessful 
 
