@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_alphabet - a function that prints the alphabet x 10, in lowercase
+ * print_alphabet_x10 - a function that prints the alphabet x 10, in lowercase
  *
  *
  */
 void print_alphabet_x10(void)
 {
-	int a , b =0 ;
-	while(b <= 10)
+	int a, b = 0;
+
+	while (b < 10)
 	{
 		for (a = 'a'; a <= 'z'; a++)
 		{
