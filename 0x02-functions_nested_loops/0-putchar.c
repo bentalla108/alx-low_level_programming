@@ -3,9 +3,7 @@
 
 int main(void)
 {
-	char *c;
-
-	c = "_putchar";
+	char *c = "_putchar";
 
 	while (*c)
 	{
