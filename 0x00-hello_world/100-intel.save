@@ -1,0 +1,2 @@
+-masm=intel#!/bin/bash
+gcc $CFILE -S 
