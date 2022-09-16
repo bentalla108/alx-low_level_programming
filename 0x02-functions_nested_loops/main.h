@@ -19,6 +19,6 @@ void print_to_98(int n);
 void print_times_table(int n);
 
 void positive_or_negative(int i);
-void putformat(int n)
+void putformat(int n);
 
 #endif 
