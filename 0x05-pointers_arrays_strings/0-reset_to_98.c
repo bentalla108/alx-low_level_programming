@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* void reset_to_98 : Take apointer ton an int as parameter
+* void reset_to_98 - Take apointer ton an int as parameter
 * a update the value it to to 98
-* n : Parameter to update
+* @n : Parameter to update
 *
 *
 *
