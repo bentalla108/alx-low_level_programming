@@ -13,17 +13,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-    int i;
+    int i =1;
 
     while (*dest++)
       {
         i++;
       }
 
-
+	i= i-1 ;
 
     while(*src++)
-    *(dest + i++) = *src++;
+    *(dest + (i++ -1)) = *src++;
 
 	return (src);
   }
