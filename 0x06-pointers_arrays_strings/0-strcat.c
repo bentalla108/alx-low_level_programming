@@ -28,13 +28,12 @@ char *_strcat(char *dest, char *src)
     int i;
 
 
-    i =_strlen(char *dest);
+    i =_strlen(dest);
 
 
 
-    while(*scr++)
+    while(*src++)
     *(dest + i++) = *src++;
 
-    printf("%d",i);
-
+	return (src);
   }
