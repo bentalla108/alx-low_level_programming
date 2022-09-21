@@ -8,27 +8,17 @@
  *
  * Return: concataned string
  *
- * _strlen - Count len of @dest
+ *
  */
-
-
- int _strlen(char *s)
- {
-   int length = 0;
-
-   while (*s++)
-     length++;
-
-   return (length);
- }
-
 
 char *_strcat(char *dest, char *src)
 {
     int i;
 
-
-    i =_strlen(dest);
+    while (*dest++)
+      {
+        i++;
+      }
 
 
 
