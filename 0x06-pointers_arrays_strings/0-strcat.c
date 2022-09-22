@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdlib.h>
 
 /**
  * _strcat - Concatenates two strings.
@@ -7,22 +7,18 @@
  * @src: source
  *
  * Return: concataned string
- *
- *
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 1;
+	char *copy = dest;
+	int index = 1;
 
-	while (*dest++)
-	        i++;
+	while (*++copy)
+		index++;
 
+	while (*src)
+		*(dest + index++) = *src++;
 
-	i = i - 1;
-
-    	while(*src++)
-    		*(dest + (i++ - 1)) = *src++;
-
-	return (src);
-  }
+	return (dest);
+}
