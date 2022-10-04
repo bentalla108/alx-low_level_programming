@@ -2,45 +2,30 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ *
+ * _strdup - copy a string to a newly allocated space in memory
+ * @str: string to copy
+ *
+ * Return: pointer to duplicated string or NULL if error
  */
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	int end1, end2, i = 0;
-	char *array;
+	unsigned int i, j;
+	char *s;
 
-	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = "";
-
-	for (end1 = 0; end1 <= *s1; end1++)
-	{
-	}
-
-	for (end2 = 0; end2 <= *s2; end2++)
-	{
-	}
-
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
-
-	if (array == NULL)
+	if (str == NULL)
 		return (NULL);
-
-	while (*s1)
+	for (i = 0; str[i]; i++)
+		;
+	i++;
+	s = malloc(i * sizeof(char));
+	if (s == NULL)
 	{
-		array[i] = *s1;
-		i++;
-		s1++;
+		return (NULL);
 	}
-
-	while (*s2)
+	for (j = 0; j < i; j++)
 	{
-		array[i] = *s2;
-		i++;
-		s2++;
+		s[j] = str[j];
 	}
-	return (array);
+	return (s);
 }
-
