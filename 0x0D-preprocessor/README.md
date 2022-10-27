@@ -1,12 +1,10 @@
-# 0x0C. C - Preprocessor
+
 ## About
 An introductory project on:
 - macros and how to use them
 - the most common predefined macros
 - How to include guard your header files
-## Requirements
-- Ubuntu 14.04
-- gcc 4.8.4
+
 ## File Descriptions
 **[0-object_like_macro.h](0-object_like_macro.h)** - defines a macro named `SIZE` as an abbreviation for the token `1024`.
 
