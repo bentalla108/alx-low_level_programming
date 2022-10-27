@@ -1,10 +1,4 @@
-# 0x12. C - More singly linked lists
-## About
-Holberton School's follow-up project on singly linked lists
-## Requirements
-- Ubuntu 14.04
-- gcc 4.8.4
-## File Descriptions
+
 ### Mandatory
 **[0-print_listint.c](0-print_listint.c)** - function that prints all the elements of a `listint_t` list.
 
