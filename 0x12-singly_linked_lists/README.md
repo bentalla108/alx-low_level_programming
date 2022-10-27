@@ -1,11 +1,8 @@
-# 0x11. C - Singly linked lists
-## About
+
 An introductory project on:
 - How to build and use linked lists
 - The difference between linked lists and arrays
-## Requirements
-- Ubuntu 14.04
-- gcc 4.8.4
+
 ## File Descriptions
 **[lists.h](lists.h)** - header file containing the definition of `list_t` and the prototypes of all functions.
 
