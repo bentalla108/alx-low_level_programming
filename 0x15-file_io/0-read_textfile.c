@@ -16,7 +16,7 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int let_r, let_w;
+ssize_t let_r, let_w;
 int fichier;
 char *text;
 text = malloc(sizeof(char) * letters);
@@ -28,17 +28,14 @@ return (0);
 fichier = open(filename, O_RDONLY);
 if (fichier == -1)
 {
-close(fichier);
 return (0);
 }
 if (text == NULL)
 {
-close(fichier);
 return (0);
 }
 
 let_r = read(fichier, text, letters);
-close(fichier);
 
 if (let_r == -1)
 {
@@ -52,5 +49,6 @@ free(text);
 if (let_r != let_w)
 return (0);
 
+close(fichier);
 return (let_w);
 }
