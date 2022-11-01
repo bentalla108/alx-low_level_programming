@@ -1,10 +1,3 @@
-/**
- * @Author: bentalla
- * @Date:   2022-10-31T19:33:59+00:00
- * @Last modified by:   bentalla
- * @Last modified time: 2022-10-31T19:33:59+00:00
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
